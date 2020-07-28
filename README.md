@@ -24,3 +24,23 @@ To enable this component in your installation, add the following to your `config
 # Example configuration.yaml entry
 saavn:
 ```
+
+You can then use media_player.saavn in your automation. 
+
+Example Script
+
+```yaml
+playsaavn:
+  sequence:
+    - service: media_player.select_source
+      data:
+        entity_id: media_player.saavn
+        source: office_speaker
+    - delay: '00:00:10'        
+    - service: media_player.play_media
+      data:
+       entity_id: media_player.saavn
+       media_content_type: playlist
+       media_content_id: 107724265
+```
+Note that you need to first select the media device on which you want to play music. This can be HA groups as well. Also you need to find your favorite album or playlist id from [here](https://www.jiosaavn.com/api.php?__call=content.getHomepageData).
