@@ -36,7 +36,6 @@ playsaavn:
       data:
         entity_id: media_player.saavn
         source: office_speaker
-    - delay: '00:00:10'        
     - service: media_player.play_media
       data:
        entity_id: media_player.saavn
