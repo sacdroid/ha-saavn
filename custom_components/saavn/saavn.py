@@ -22,7 +22,7 @@ class Saavn():
                 songs_json['image'] = self._fix_image_url(songs_json['image'])
                 for songs in songs_json['songs']:
                     try:
-                        songs['media_url'] = self.generate_media_url(
+                        songs['media_url'] = self._generate_media_url(
                             songs['media_preview_url'])
                     except KeyError:
                         songs['media_url'] = self._decrypt_url(songs['encrypted_media_url'])
