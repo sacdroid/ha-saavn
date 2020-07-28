@@ -1,9 +1,8 @@
 {
   "domain": "saavn",
   "name": "Saavn",
-  "documentation": "https://www.home-assistant.io/integrations/saavn",
+  "documentation": "https://github.com/sacdroid/ha-saavn/blob/master/README.md",
   "requirements": ["pyDes>=2.0.1"],
-  "zeroconf": ["_spotify-connect._tcp.local."],
   "dependencies": ["http"],
   "codeowners": ["@sacdroid"]
 }
