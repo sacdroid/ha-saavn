@@ -39,7 +39,7 @@ playsaavn:
     - service: media_player.play_media
       data:
        entity_id: media_player.saavn
-       media_content_type: playlist
-       media_content_id: 107724265
+       media_content_type: playlist # this can be playlist or album
+       media_content_id: 107724265 
 ```
 Note that you need to first select the media device on which you want to play music. This can be HA groups as well. Also you need to find your favorite album or playlist id from [here](https://www.jiosaavn.com/api.php?__call=content.getHomepageData).
